@@ -3,6 +3,12 @@ use warnings;
 use Module::Build;
 
 my $builder = Module::Build->new(
+    meta_merge => {
+        resources => {
+            repository => 'http://github.com/jjl/Net-Twitter-Antispam',
+        },
+    },
+
     module_name         => 'Net::Twitter::Antispam',
     license             => 'perl',
     dist_author         => 'James Laver <sprintf(qw(%s@%s.%s cpan jameslaver com))>',
